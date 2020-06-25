@@ -1,0 +1,10 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Invoices</h1>
+<ul>
+    <li th:each="invoice : ${invoiceList}">
+        <a th:href="@{/invoice/show/{id}(id=${invoice.id})}" th:text="${invoice.name}">Invoice Name</a>
+    </li>
+</ul>
+</body>
+</html>

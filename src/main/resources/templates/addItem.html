@@ -1,0 +1,23 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Add item to invoice</h1>
+
+<form th:object="${invoiceItem}" method="post" th:action="@{/invoice/addItem}">
+    <input type="hidden" th:field="*{invoice}">
+    <table>
+        <tr>
+            <th>Invoice</th>
+            <td th:text="${invoiceItem.invoice.name}">invoice name</td>
+        </tr>
+        <tr>
+            <th>Item</th>
+            <td>
+                <input type="text" th:field="*{name}">
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
