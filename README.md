@@ -1,5 +1,7 @@
 # Spring Boot 2.3.1/2.2.8 MVC Binding Issue Example
 
+> **ISSUE RESOLVED:** https://github.com/spring-projects/spring-boot/issues/22104 
+
 The code in this repository worked with Spring Boot 2.3.0/2.2.7, but no longer does with 2.3.1/2.2.8.
 
 Therefore, the tests in `MvcBindingIssueApplicationTests` fail with 2.3.1 and 2.2.8 but work with 2.3.0 and 2.2.7.
